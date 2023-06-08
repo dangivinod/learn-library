@@ -1,0 +1,54 @@
+{
+  "name": "@dangi.vinod/learn-library",
+  "version": "1.0.0",
+  "description": "The Storybook design system tutorial is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist", 
+    "release": "auto shipit"
+  },
+  "keywords": [],
+  "author": "vd",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
+    "@storybook/addon-essentials": "^7.0.20",
+    "@storybook/addon-interactions": "^7.0.20",
+    "@storybook/addon-links": "^7.0.20",
+    "@storybook/blocks": "^7.0.20",
+    "@storybook/react": "^7.0.20",
+    "@storybook/react-webpack5": "^7.0.20",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.20"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.21.5",
+    "auto": "^10.46.0",
+    "cross-env": "^7.0.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dangivinod/learn-library.git"
+  },
+  "bugs": {   
+    "url": "https://github.com/dangivinod/learn-library/issues"
+  },
+  "homepage": "https://github.com/dangivinod/learn-library#readme"
+}
